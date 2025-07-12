@@ -1,0 +1,143 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.app-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.app-logo {
+  height: 60px;
+  width: auto;
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.filter-panel {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+}
+
+.filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+.sort-controls label {
+  color: var(--primary-dark);
+  font-weight: bold;
+  margin-right: 0.2rem;
+  font-size: 1.1rem;
+}
+.sort-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.employee-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.app-footer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .sort-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .employee-list-container {
+    grid-template-columns: 1fr;
+  }
+}
