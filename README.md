@@ -148,9 +148,9 @@ A responsive web application for managing employee records with filtering, sorti
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-👤 Author
-Prema Sagar Bontula
-GitHub: @premasagarbontula
+👤 Author:
+Prema Sagar Bontula,
+GitHub: @premasagarbontula,
 LinkedIn: https://www.linkedin.com/in/premasagarbontula/
 
 🙏 Acknowledgments
