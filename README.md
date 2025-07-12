@@ -128,7 +128,7 @@ A responsive web application for managing employee records with filtering, sorti
 📱 Screenshots
 
     ### Desktop Interface
-    ![Main dashboard showing employee list with filters]([./images/main-dashboard-view.png](https://github.com/premasagarbontula/employee-directory/blob/0e5725f19e536017dfeaa12b81e2f0401788ddd9/images/main-dashboard-view.png))
+    ![Main dashboard showing employee list with filters]([./images/main-dashboard-view.png](https://github.com/premasagarbontula/employee-directory/blob/0e5725f19e536017dfeaa12b81e2f0401788ddd9/images/main-dashboard-view.png)
     
 
     ### Add Employee Form
