@@ -130,19 +130,19 @@ A responsive web application for managing employee records with filtering, sorti
     ### Desktop Interface
 ![Main dashboard showing employee list with filters](https://github.com/premasagarbontula/employee-directory/blob/0e5725f19e536017dfeaa12b81e2f0401788ddd9/images/main-dashboard-view.png)
     ### Add Employee Form
-    ![Modal dialog for adding new employees](./images/add-employee-modal.png)
+![Modal dialog for adding new employees](./images/add-employee-modal.png)
 
     ### Mobile Experience
-    ![Responsive view on smartphone devices](./images/mobile-responsive-view.png)
+![Responsive view on smartphone devices](./images/mobile-responsive-view.png)
 
     ### Search Functionality
-    ![Search employees by name or email](./images/search-employees-view.png)
+![Search employees by name or email](./images/search-employees-view.png)
 
     ### Pagination System
-    ![Pagination controls showing 10 items per page](./images/pagination-view.png)
+![Pagination controls showing 10 items per page](./images/pagination-view.png)
 
     ### Advanced Filtering
-    ![Filter employees by department and role](./images/filter-employees-view.png)
+![Filter employees by department and role](./images/filter-employees-view.png)
 
 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
