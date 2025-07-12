@@ -41,44 +41,48 @@ A responsive web application for managing employee records with filtering, sorti
    http://localhost:8080
 
 🗂️ Project Structure
-text
-employee-directory/
-├── src/
-│ ├── main/
-│ │ ├── java/
-│ │ │ └── com/example/employeedirectory/
-│ │ │ ├── Application.java
-│ │ │ └── HomeController.java
-│ │ └── resources/
-│ │ ├── static/
-│ │ │ ├── css/
-│ │ │ │ ├── base.css
-│ │ │ │ ├── components.css
-│ │ │ │ └── layout.css
-│ │ │ └── js/
-│ │ │ ├── app.js
-│ │ │ ├── data.js
-│ │ │ └── form.js
-│ │ ├── templates/
-│ │ │ └── index.ftlh
-│ │ └── application.properties
-└── README.md
 
-🔧 Technical Implementation 1. Frontend:
-Pure JavaScript with no external dependencies
-Modular code organization (app.js, data.js, form.js)
-CSS with responsive design principles
-FreeMarker templates for server-side rendering
+        employee-directory/
+    ├── src/
+    │   ├── main/
+    │   │   ├── java/
+    │   │   │   └── com/example/employeedirectory/
+    │   │   │       ├── Application.java
+    │   │   │       └── HomeController.java
+    │   │   └── resources/
+    │   │       ├── static/
+    │   │       │   ├── css/
+    │   │       │   │   ├── base.css
+    │   │       │   │   ├── components.css
+    │   │       │   │   └── layout.css
+    │   │       │   └── js/
+    │   │       │       ├── app.js
+    │   │       │       ├── data.js
+    │   │       │       └── form.js
+    │   │       ├── templates/
+    │   │       │   └── index.ftlh
+    │   │       └── application.properties
+    └── README.md
+
+🔧 Technical Implementation
+
+    1. Frontend:
+        Pure JavaScript with no external dependencies
+        Modular code organization (app.js, data.js, form.js)
+        CSS with responsive design principles
+        FreeMarker templates for server-side rendering
 
     2. Backend:
         Spring Boot for server-side implementation
         RESTful architecture principles
         Local storage for data persistence
 
-🎯 Core Features Explained 1. Data Management
-Uses LocalStorage for client-side data persistence
-CRUD operations with validation and error handling
-Email uniqueness validation
+🎯 Core Features Explained
+
+    1. Data Management
+        Uses LocalStorage for client-side data persistence
+        CRUD operations with validation and error handling
+        Email uniqueness validation
 
     2. Search & Filter
         Real-time search across multiple fields
@@ -92,12 +96,15 @@ Email uniqueness validation
         Confirmation dialogs for destructive actions
 
 🔄 State Management
-Centralized state management in data.js
-Event-driven updates using CustomEvents
-Persistent storage using localStorage
 
-🚧 Challenges Faced 1. State Management:
-Maintaining consistent state across components
+    Centralized state management in data.js
+    Event-driven updates using CustomEvents
+    Persistent storage using localStorage
+
+🚧 Challenges Faced
+
+    1. State Management:
+        Maintaining consistent state across components
 
     2. Form Validation:
         Implementing comprehensive client-side validation
@@ -107,17 +114,21 @@ Maintaining consistent state across components
         Optimizing filter and sort operations
         Managing DOM updates efficiently
 
-🔜 Future Improvements 1. Technical Enhancements:
-Implement proper backend API
-Add database integration
-Implement user authentication
+🔜 Future Improvements
+
+    1. Technical Enhancements:
+        Implement proper backend API
+        Add database integration
+        Implement user authentication
 
     2. Feature Additions:
         Export to CSV/Excel
         Image upload for employee profiles
 
-📱 Screenshots ### Desktop Interface
-![Main dashboard showing employee list with filters](./images/main-dashboard-view.png)
+📱 Screenshots
+
+    ### Desktop Interface
+    ![Main dashboard showing employee list with filters](./images/main-dashboard-view.png)
 
     ### Add Employee Form
     ![Modal dialog for adding new employees](./images/add-employee-modal.png)
