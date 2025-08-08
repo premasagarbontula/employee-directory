@@ -123,24 +123,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function updateDropdown(id, options, defaultText = "Select") {
+    const select = document.getElementById(id);
+    const currentValue = select.value;
+
+    select.innerHTML = `<option value="">${defaultText}</option>`;
+    options.forEach((option) => {
+      select.add(new Option(option, option));
+    });
+
+    // Restore selection if still valid
+    if (currentValue && options.includes(currentValue)) {
+      select.value = currentValue;
+    }
+  }
+
   function populateDropdowns() {
-    const depts = window.employeeAPI.getDepartments();
-    const roles = window.employeeAPI.getRoles();
+    // Get ALL possible options (master lists + any custom values)
+    const allDepts = window.employeeAPI.getDepartments();
+    const allRoles = window.employeeAPI.getRoles();
 
-    const formDept = document.getElementById("department");
-    const formRole = document.getElementById("role");
-
-    // Clear and repopulate
-    formDept.innerHTML = '<option value="">Select Department</option>';
-    formRole.innerHTML = '<option value="">Select Role</option>';
-
-    depts.forEach((dept) => {
-      formDept.add(new Option(dept, dept));
-    });
-
-    roles.forEach((role) => {
-      formRole.add(new Option(role, role));
-    });
+    // Update both form and filter dropdowns
+    updateDropdown("department", allDepts);
+    updateDropdown("role", allRoles);
+    updateDropdown("department-filter", allDepts, "All Departments");
+    updateDropdown("role-filter", allRoles, "All Roles");
   }
 
   // Form handling

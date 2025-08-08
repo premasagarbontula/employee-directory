@@ -1,15 +1,14 @@
-const DEFAULT_DEPARTMENTS = [
+const MASTER_DEPARTMENTS = [
   "HR",
   "IT",
   "Finance",
   "Marketing",
   "Sales",
   "Operations",
-  "Customer Support",
   "Engineering",
 ];
 
-const DEFAULT_ROLES = [
+const MASTER_ROLES = [
   "Manager",
   "Developer",
   "Analyst",
@@ -89,18 +88,7 @@ const sampleEmployees = [
   },
 ];
 
-// Initialize or load employees from localStorage
 let employees = JSON.parse(localStorage.getItem("employees")) || [];
-
-// Load sample data if no employees exist
-function loadSampleData() {
-  if (employees.length === 0) {
-    employees = [...sampleEmployees];
-    saveEmployees();
-    return true; // Sample data was loaded
-  }
-  return false; // Sample data was not loaded (already had data)
-}
 
 function saveEmployees() {
   localStorage.setItem("employees", JSON.stringify(employees));
@@ -110,7 +98,6 @@ function generateId() {
   return employees.length > 0 ? Math.max(...employees.map((e) => e.id)) + 1 : 1;
 }
 
-// Public API
 window.employeeAPI = {
   getEmployees: () => employees,
 
@@ -148,18 +135,29 @@ window.employeeAPI = {
     saveEmployees();
   },
 
-  getDepartments: () => {
-    const employeeDepts = [
-      ...new Set(employees.map((e) => e.department).filter(Boolean)),
-    ];
-    return employeeDepts.length > 0 ? employeeDepts : DEFAULT_DEPARTMENTS;
+  // Always combine master lists with any custom values from employees
+  getDepartments: () => [
+    ...new Set([
+      ...MASTER_DEPARTMENTS,
+      ...employees.map((e) => e.department).filter(Boolean),
+    ]),
+  ],
+
+  getRoles: () => [
+    ...new Set([
+      ...MASTER_ROLES,
+      ...employees.map((e) => e.role).filter(Boolean),
+    ]),
+  ],
+
+  // Initialize with sample data if empty
+  initData: () => {
+    if (employees.length === 0) {
+      employees = [...sampleEmployees];
+      saveEmployees();
+    }
   },
-  getRoles: () => {
-    const employeeRoles = [
-      ...new Set(employees.map((e) => e.role).filter(Boolean)),
-    ];
-    return employeeRoles.length > 0 ? employeeRoles : DEFAULT_ROLES;
-  },
-  // Add this to expose sample data loading
-  loadSampleData: () => loadSampleData(),
 };
+
+// Initialize data on load
+window.employeeAPI.initData();
