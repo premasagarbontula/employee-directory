@@ -9,14 +9,17 @@ const MASTER_DEPARTMENTS = [
 ];
 
 const MASTER_ROLES = [
-  "Manager",
-  "Developer",
-  "Analyst",
-  "Executive",
-  "Sales Representative",
-  "Recruiter",
-  "Designer",
-  "QA Engineer",
+  "HR Manager",
+  "Senior Developer",
+  "Financial Analyst",
+  "Marketing Director",
+  "Account Executive",
+  "DevOps Engineer",
+  "Talent Acquisition",
+  "Senior Analyst",
+  "Operations Manager",
+  "Systems Administrator",
+  "Support Lead",
   "Product Owner",
 ];
 
@@ -85,6 +88,38 @@ const sampleEmployees = [
     email: "henry.g@example.com",
     department: "Finance",
     role: "Senior Analyst",
+  },
+  {
+    id: 9,
+    firstName: "Ivy",
+    lastName: "Chen",
+    email: "ivy.chen@example.com",
+    department: "Operations",
+    role: "Operations Manager",
+  },
+  {
+    id: 10,
+    firstName: "Jack",
+    lastName: "Williams",
+    email: "jack.w@example.com",
+    department: "IT",
+    role: "Systems Administrator",
+  },
+  {
+    id: 11,
+    firstName: "Karen",
+    lastName: "Taylor",
+    email: "karen.t@example.com",
+    department: "Customer Support",
+    role: "Support Lead",
+  },
+  {
+    id: 12,
+    firstName: "Liam",
+    lastName: "Nguyen",
+    email: "liam.n@example.com",
+    department: "Product",
+    role: "Product Owner",
   },
 ];
 
