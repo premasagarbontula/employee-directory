@@ -54,14 +54,21 @@ No server or dependencies required
 ##File Structure
 
 Employee Directory/
-├── index.html # Main application page
+├── images/
+│ ├── Add Employee View.png
+│ └── desktop view.png
+│
 ├── scripts/
 │ ├── app.js # Core application logic
-│ └── employeesData.js # Data management
-└── styles/
-├── base.css # Global styles
-├── components.css # UI components
-└── layout.css # Page structure
+│ └── employeesData.js # Data management and API
+│
+├── styles/
+│ ├── base.css # Global styles and CSS variables
+│ ├── components.css # Reusable UI components
+│ └── layout.css # Page structure and layout
+│
+├── index.html # Main application page
+└── README.md # Project documentation
 
 ##Usage Guide
 Add Employee: Click "+ Add Employee" button
