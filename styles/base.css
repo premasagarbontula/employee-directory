@@ -1,0 +1,57 @@
+:root {
+  /* Color Scheme */
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --secondary: #3f37c9;
+  --danger: #f72585;
+  --success: #4cc9f0;
+  --warning: #f8961e;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --gray: #6c757d;
+  --light-gray: #e9ecef;
+
+  /* Design Tokens */
+  --border-radius: 8px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: #f8fafc;
+  padding: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Responsive Base */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}

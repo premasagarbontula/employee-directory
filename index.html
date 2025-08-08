@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="https://media.istockphoto.com/id/1165660282/vector/contact-book.jpg?s=612x612&w=0&k=20&c=vtzVSsr3mbq-0rOvEKBz69c_JZCCw4U04XVFnFwqecY="
+          class="app-logo"
+          alt="employee directory logo"
+        />
+
+        <h1>Employee Directory</h1>
+      </div>
+      <button id="add-employee-btn" class="btn btn-primary">
+        Add Employee
+      </button>
+    </header>
+
+    <div class="filters">
+        <input
+            type="text"
+            id="search"
+            placeholder="Search employees..."
+            class="search-input"
+        />
+        <select id="department-filter" class="filter-select">
+            <option value="">All Departments</option>
+        </select>
+        <select id="role-filter" class="filter-select">
+            <option value="">All Roles</option>
+        </select>
+        <button id="reset-filters" class="btn btn-secondary">
+            Reset Filters
+        </button>
+    </div>
+
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th data-sort="firstName">First Name</th>
+            <th data-sort="lastName">Last Name</th>
+            <th data-sort="email">Email</th>
+            <th data-sort="department">Department</th>
+            <th data-sort="role">Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="employee-table-body"></tbody>
+      </table>
+
+      <div class="pagination">
+        <button id="prev-page" class="btn">Previous</button>
+        <span id="page-info">Page 1 of 1</span>
+        <button id="next-page" class="btn">Next</button>
+      </div>
+    </main>
+
+    <!-- Employee Form Modal -->
+    <div id="employee-modal" class="modal hidden">
+      <div class="modal-content">
+        <form id="employee-form">
+          <input type="hidden" id="employee-id" />
+          <h2 id="form-title">Add Employee</h2>
+
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" required />
+            <span class="error-message" id="first-name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required />
+            <span class="error-message" id="last-name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+            <span class="error-message" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department</label>
+            <select id="department" required>
+              <option value="">Select Department</option>
+            </select>
+            <span class="error-message" id="department-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role" required>
+              <option value="">Select Role</option>
+            </select>
+            <span class="error-message" id="role-error"></span>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="cancel-form" class="btn">Cancel</button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts/employeesData.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

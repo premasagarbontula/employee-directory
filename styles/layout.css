@@ -1,0 +1,121 @@
+/* ========== HEADER ========== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.app-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.header h1 {
+  margin-bottom: 0;
+  color: var(--primary);
+}
+
+/* ========== FILTERS ========== */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 2;
+  min-width: 250px;
+}
+
+.filter-select {
+  flex: 1;
+  min-width: 180px;
+}
+
+/* ========== TABLE ========== */
+.employee-table {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+/* ========== PAGINATION ========== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* ========== MODAL ========== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: 500px;
+  box-shadow: var(--box-shadow);
+}
+
+/* ========== RESPONSIVE ADJUSTMENTS ========== */
+@media (max-width: 992px) {
+  .filters {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+  }
+
+  .search-input,
+  .filter-select {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .employee-table th,
+  .employee-table td {
+    padding: 0.75rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+}
