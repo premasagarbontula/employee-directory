@@ -51,7 +51,7 @@ Simply open index.html in any modern browser
 
 No server or dependencies required
 
-##File Structure
+## File Structure
 
 ```
 Project/
@@ -68,7 +68,7 @@ Project/
     └── layout.css
 ```
 
-##Usage Guide
+## Usage Guide
 Add Employee: Click "+ Add Employee" button
 
 Search: Type in the search box (name/email)
@@ -79,7 +79,7 @@ Edit: Click "Edit" on any employee row
 
 Delete: Click "Delete" (with confirmation)
 
-##Customization
+## Customization
 To modify:
 
 Colors: Edit CSS variables in base.css
@@ -88,7 +88,7 @@ Sample Data: Update sampleEmployees in employeesData.js
 
 Pagination: Change employeesPerPage in app.js
 
-##Future Enhancements
+## Future Enhancements
 Export to CSV functionality
 Dark mode toggle
 Photo upload support
