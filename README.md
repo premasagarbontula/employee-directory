@@ -94,8 +94,8 @@ Dark mode toggle
 Photo upload support
 Department/Role management
 
-##License
+## License
 MIT License - Free for personal and commercial use
 
-Contributors: Prema Sagar Bontula
-Live Demo: https://employee-directory-six-sable.vercel.app/
+- **Contributors: Prema Sagar Bontula**
+- **Live Demo: https://employee-directory-six-sable.vercel.app/**
