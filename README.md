@@ -1,9 +1,19 @@
-Employee Directory System
+👥 Employee Directory System
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success)](https://employee-directory-six-sable.vercel.app)
+
+Employee Directory System is a modern web application for managing employee records with features such as search, filtering, sorting, pagination, and responsive design for an enhanced user experience.
+
+## 📷 Screenshots
+
+### Dashboard
 
 ![Desktop View of App](./images/desktop%20view.png)
+
+### Add Employee
+
 ![Add Employee View of App](./images/Add%20Employee%20View.png)
 
-A modern web application for managing and browsing employee information with filtering, sorting, and pagination capabilities.
 
 ## Features
 
@@ -94,8 +104,6 @@ Dark mode toggle
 Photo upload support
 Department/Role management
 
-## License
-MIT License - Free for personal and commercial use
 
 - **Contributors: Prema Sagar Bontula**
 - **Live Demo: https://employee-directory-six-sable.vercel.app/**
